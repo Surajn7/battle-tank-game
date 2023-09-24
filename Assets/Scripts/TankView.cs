@@ -6,9 +6,11 @@ public class TankView : MonoBehaviour
 {
     [SerializeField]public Joystick joystick;
     public TankController tankController;
+    private TankScriptableObject tankScriptableObject;
     private float movement;
     private float rotation;
     public Rigidbody rb;
+    public ParticleSystem muzzleFlash;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,23 +21,30 @@ public class TankView : MonoBehaviour
     void Update()
     {
         Movement();
-
-        if (joystick.Vertical != 0)
-            tankController.Move(movement, 20);
-        if (joystick.Horizontal != 0)
-            tankController.Rotate(rotation, 15);
+        if (Input.GetButtonDown("Fire1"))
+        {
+            muzzleFlash.Play();
+            tankController.Shoot(); 
+        }
+        //if (joystick.Vertical != 0)
+        if(movement != 0)
+            tankController.Move(movement);        
+        //if (joystick.Horizontal != 0)
+        if(rotation!=0)
+            tankController.Rotate(rotation, 35);
     }
 
     private void Movement()
     {
-        movement = joystick.Vertical * 1f;
-        rotation = joystick.Horizontal * 1f;
+        //movement = joystick.Vertical * 1f;
+        movement = Input.GetAxis("Vertical");
+        //rotation = joystick.Horizontal * 1f;
+        rotation = Input.GetAxis("Horizontal");
     }
     public void SettankController(TankController _tankController)
     {
         tankController = _tankController;
     }
-
     public Rigidbody GetRigidbody()
     {
         return rb;

@@ -5,15 +5,19 @@ using UnityEngine;
 public class TankService : MonoBehaviour
 {
     public TankView tankView;
-
+    public TankScriptableObject[] tankConfigurations;
+    public int speed, health;
     public void Start()
     {
-        create();
+        int Number = Random.Range(1, 3);
+        create(Number);
     }
 
-    private TankController create()
+    private TankController create(int randomNumber)
     {
-        TankModel tankModel = new TankModel();
+        TankScriptableObject tankScriptableObject =  tankConfigurations[randomNumber];
+        TankModel tankModel = new TankModel(tankScriptableObject);
+        //TankModel tankModel = new TankModel(TankType.None,speed,health);
         TankController tankController = new TankController(tankModel,tankView);
         return tankController;
     }
