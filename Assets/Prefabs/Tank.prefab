@@ -218,6 +218,7 @@ MonoBehaviour:
   joystick: {fileID: 2616763627731841887, guid: fbfb38b0c920fe9449a22c706492e28c,
     type: 3}
   rb: {fileID: 6455904699400710694}
+  muzzleFlash: {fileID: 19800006, guid: c888f0c922d622147bbdbe2ca794142b, type: 3}
 --- !u!54 &6455904699400710694
 Rigidbody:
   m_ObjectHideFlags: 0
