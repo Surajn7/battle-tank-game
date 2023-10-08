@@ -7,7 +7,7 @@ public class FlipEnemy : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-      if (collision.gameObject.GetComponent<EnemyScript>() != null)
+      /*if (collision.gameObject.GetComponent<EnemyScript>() != null)
         {
             Debug.Log("Enemy COllision ");
             EnemyScript Enemy = collision.gameObject.GetComponent<EnemyScript>();
@@ -15,6 +15,6 @@ public class FlipEnemy : MonoBehaviour
             Enemy_rotation.y = 180 + Enemy_rotation.y;
             Enemy.transform.localRotation = Enemy_rotation;
             Enemy.Direction = -Enemy.Direction;
-        }
+        }*/
     }
 }

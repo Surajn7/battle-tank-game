@@ -135,11 +135,10 @@ GameObject:
   m_Component:
   - component: {fileID: 595031382}
   - component: {fileID: 595031381}
-  - component: {fileID: 595031383}
   m_Layer: 0
   m_Name: startPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -184,18 +183,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &595031383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595031380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f136ceda9c216ef4b9a5ad6cabb25f05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &825953714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,10 +192,30 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3709882455865618411, guid: b6cba8781235eca4e8486197be122244,
         type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3709882455865618411, guid: b6cba8781235eca4e8486197be122244,
+        type: 3}
       propertyPath: Explosion
       value: 
       objectReference: {fileID: 19800002, guid: 3364c97de68d3a147af572d1c71c6455,
         type: 3}
+    - target: {fileID: 3709882455865618411, guid: b6cba8781235eca4e8486197be122244,
+        type: 3}
+      propertyPath: points.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3709882455865618411, guid: b6cba8781235eca4e8486197be122244,
+        type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 595031382}
+    - target: {fileID: 3709882455865618411, guid: b6cba8781235eca4e8486197be122244,
+        type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1499904555}
     - target: {fileID: 6455904699400581332, guid: b6cba8781235eca4e8486197be122244,
         type: 3}
       propertyPath: m_RootOrder
@@ -222,7 +229,7 @@ PrefabInstance:
     - target: {fileID: 6455904699400581332, guid: b6cba8781235eca4e8486197be122244,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6455904699400581332, guid: b6cba8781235eca4e8486197be122244,
         type: 3}
@@ -621,11 +628,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1499904555}
   - component: {fileID: 1499904554}
-  - component: {fileID: 1499904556}
   m_Layer: 0
   m_Name: endPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -670,18 +676,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1499904556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499904553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f136ceda9c216ef4b9a5ad6cabb25f05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1607689742
 GameObject:
   m_ObjectHideFlags: 0
