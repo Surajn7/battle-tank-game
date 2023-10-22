@@ -8,7 +8,7 @@ public class TankModel
 
     public TankType tankType;
     public int  health;
-    public float speed;
+    public float speed = 1;
     /*public TankModel(TankType _tankType,int _speed,int _health)
     {
         tankType = _tankType;

@@ -1,6 +1,6 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class TankController
 {
@@ -8,6 +8,11 @@ public class TankController
     private TankView tankView;
     private TankScriptableObject tankScriptableObject;
     private Rigidbody rb;
+    public GameObject bulletPrefab;
+    public Transform bulletSpawnPoint;
+    public float bulletspeed;
+    RaycastHit ray;
+
     public TankController(TankModel _tankModel,TankView _tankView)
     {
         tankModel = _tankModel;
@@ -28,17 +33,5 @@ public class TankController
         Vector3 vector = new Vector3(0f, rotate * rotateSpeed, 0f);
         Quaternion deltaRotation = Quaternion.Euler(vector * Time.deltaTime);
         rb.MoveRotation(rb.rotation * deltaRotation);
-    }
-
-    public void Shoot()
-    {
-        RaycastHit ray;
-        if (Physics.Raycast(tankView.gameObject.transform.position, tankView.transform.forward, out ray))
-        {
-            Debug.Log(ray.transform.name);
-            EnemyScript enemy = ray.transform.GetComponent<EnemyScript>();
-            if (enemy != null)
-            { enemy.takeDamage(20); }
-        }
     }
 }

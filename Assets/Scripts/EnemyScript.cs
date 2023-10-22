@@ -1,27 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour
 {
-    public int Direction;
+    public float speed;
     public int health;
-    public ParticleSystem Explosion;
+    public GameManager gameManager;
+    //public ParticleSystem Explosion;
+    public Transform[] points;
+    int current,Score;
     // Update is called once per frame
     void Update()
     {
-        /**Vector3 move = transform.position;
-        move.z = move.z + Direction * 1 * Time.deltaTime;
-        transform.position = move;*/
+        if (transform.position != points[current].position)
+            transform.position = Vector3.MoveTowards(transform.position, points[current].position, speed * Time.deltaTime);
+        else
+            current = (current + 1) % points.Length;
+
     }
 
-    public void takeDamage(int  damage)
+    public void takeDamage()
     {
-      health = health - damage;
         if (health <= 0)
         {
-            Explosion.Play();
-            Destroy(gameObject);
+            gameManager.CheckObjects();
+            StartCoroutine(Death(2f));            
         }
+        health -= 10;        
+    }
+
+    private IEnumerator Death(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(this.gameObject);
     }
 }
