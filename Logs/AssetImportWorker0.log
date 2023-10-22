@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-F:/Outscal/FSGD/Unity Advance/battle-tank-game-1
+F:/Outscal/FSGD/Unity Advance/BattleTank/battle-tank-game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62457
-Successfully changed project path to: F:/Outscal/FSGD/Unity Advance/battle-tank-game-1
-F:/Outscal/FSGD/Unity Advance/battle-tank-game-1
+54471
+Successfully changed project path to: F:/Outscal/FSGD/Unity Advance/BattleTank/battle-tank-game
+F:/Outscal/FSGD/Unity Advance/BattleTank/battle-tank-game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,15 +47,15 @@ F:/Outscal/FSGD/Unity Advance/battle-tank-game-1
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9592] Host "[IP] 192.168.1.154 [Port] 0 [Flags] 2 [Guid] 160125770 [EditorId] 160125770 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-E57FQ5B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7468] Host "[IP] 192.168.1.152 [Port] 0 [Flags] 2 [Guid] 358218631 [EditorId] 358218631 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-E57FQ5B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9592] Host "[IP] 192.168.1.154 [Port] 0 [Flags] 2 [Guid] 160125770 [EditorId] 160125770 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-E57FQ5B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7468] Host "[IP] 192.168.1.152 [Port] 0 [Flags] 2 [Guid] 358218631 [EditorId] 358218631 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-E57FQ5B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 104.86 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 105.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path F:/Outscal/FSGD/Unity Advance/battle-tank-game-1/Assets
+[Subsystems] Discovering subsystems at path F:/Outscal/FSGD/Unity Advance/BattleTank/battle-tank-game/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -69,92 +69,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.018451 seconds.
+Registered in 0.016275 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 98.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 133.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.425 seconds
+- Completed reload, in  1.673 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1426ms)
-		BeginReloadAssembly (202ms)
+	ReloadAssembly (1674ms)
+		BeginReloadAssembly (176ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (967ms)
-			LoadAssemblies (195ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1246ms)
+			LoadAssemblies (171ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (260ms)
+			SetupTypeCache (313ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (508ms)
+			RebuildScriptCaches (167ms)
+			SetupLoadedEditorAssemblies (624ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (98ms)
-				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (101ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (133ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (350ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007437 seconds.
+Registered in 0.006699 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.359 seconds
+- Completed reload, in  2.694 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2361ms)
-		BeginReloadAssembly (255ms)
+	ReloadAssembly (2696ms)
+		BeginReloadAssembly (254ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1836ms)
+		EndReloadAssembly (2127ms)
 			LoadAssemblies (177ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (455ms)
+			SetupTypeCache (720ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (113ms)
-			SetupLoadedEditorAssemblies (1004ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (1036ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (170ms)
-				ProcessInitializeOnLoadAttributes (489ms)
-				ProcessInitializeOnLoadMethodAttributes (305ms)
-				AfterProcessingInitializeOnLoad (18ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (539ms)
+				ProcessInitializeOnLoadMethodAttributes (294ms)
+				AfterProcessingInitializeOnLoad (19ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2460 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 64 unused Assets / (344.5 KB). Loaded Objects now: 2897.
-Memory consumption went from 99.8 MB to 99.4 MB.
-Total: 12.135900 ms (FindLiveObjects: 0.359000 ms CreateObjectMapping: 0.369400 ms MarkObjects: 11.191700 ms  DeleteObjects: 0.214200 ms)
+Unloading 64 unused Assets / (344.8 KB). Loaded Objects now: 2892.
+Memory consumption went from 99.5 MB to 99.2 MB.
+Total: 15.312400 ms (FindLiveObjects: 0.355900 ms CreateObjectMapping: 0.361000 ms MarkObjects: 14.266500 ms  DeleteObjects: 0.327000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,25 +168,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1764350.627504 seconds.
-  path: Assets/Materials/Dust.mat
-  artifactKey: Guid(424be3af6ad117140887d3e652a89d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Dust.mat using Guid(424be3af6ad117140887d3e652a89d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0063e01ed31b57ca72d677b8ef8aba4') in 0.364137 seconds 
+  Time since last request: 1767062.370710 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(37961ba4d27bd46428d20c2ffe403dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(37961ba4d27bd46428d20c2ffe403dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d0a033cdb7112282a290efb02f5935') in 0.022847 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Prefabs/CompleteLevelArt.prefab
-  artifactKey: Guid(0aac6aef14f064c3fb626270cff2683b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/CompleteLevelArt.prefab using Guid(0aac6aef14f064c3fb626270cff2683b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4aeed6be0e8b02cc9a1eb25591018c0') in 0.133900 seconds 
+  Time since last request: 0.000053 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(649e5c42226ee47edb6bb4edd6574de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(649e5c42226ee47edb6bb4edd6574de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44214ff458ec79faa9405e96467ef651') in 0.019253 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Prefabs/EnemyTank.prefab
-  artifactKey: Guid(b6cba8781235eca4e8486197be122244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/EnemyTank.prefab using Guid(b6cba8781235eca4e8486197be122244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b37ca8e3e3ca19e3fba92f2e30a2f5d') in 0.043384 seconds 
+  Time since last request: 1259.420869 seconds.
+  path: Assets/Prefabs/Tank.prefab
+  artifactKey: Guid(703d02746b840094db0b644cc292aae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tank.prefab using Guid(703d02746b840094db0b644cc292aae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c11fb657c1c9dc8acb4d3ec42ccda67') in 0.147187 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Prefabs/DustTrail.prefab
-  artifactKey: Guid(f7167ad2844254441b40b8a300b4f1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DustTrail.prefab using Guid(f7167ad2844254441b40b8a300b4f1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c81f00f4d17378e7a886f46f85be12') in 0.063418 seconds 
+  Time since last request: 1.163755 seconds.
+  path: Assets/Prefabs/Materials
+  artifactKey: Guid(4ffa2992b5937744b898c283e38bf022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Materials using Guid(4ffa2992b5937744b898c283e38bf022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d42fc9c9ee7947b451d85a3cc146c2') in 0.019061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.624523 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(c2d6bea73573c9f4499c64d2b2f5f0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(c2d6bea73573c9f4499c64d2b2f5f0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb73cf10c85b54a70b65301e39d12222') in 0.020835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.243055 seconds.
+  path: Assets/Prefabs/Tank 1.prefab
+  artifactKey: Guid(c46782a3a676586449f95d0e8e6ed085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tank 1.prefab using Guid(c46782a3a676586449f95d0e8e6ed085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08c2f341970e571df878d21d45dd52d') in 0.027485 seconds 
